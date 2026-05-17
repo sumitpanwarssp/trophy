@@ -1,0 +1,22 @@
+import { Link } from "react-router-dom";
+
+export default function Header() {
+  return (
+    <header className="bg-black text-white px-8 py-4 flex justify-between items-center">
+
+      <h1 className="text-xl font-bold">
+        Trophy Venture
+      </h1>
+
+      <nav className="flex gap-6">
+        <Link to="/">Home</Link>
+        <Link to="/trophies">Trophies</Link>
+        <Link to="/gallery">Gallery</Link>
+        <Link to="/order">Order</Link>
+        <Link to="/about">About</Link>
+        <Link to="/contact">Contact</Link>
+      </nav>
+
+    </header>
+  );
+}

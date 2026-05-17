@@ -1,0 +1,46 @@
+# ═══════════════════════════════════════════════════
+#   robots.txt — All In One Trophy & Momento Center
+#   https://www.allinonetrophy.com
+# ═══════════════════════════════════════════════════
+
+# ── ALLOW ALL GOOD CRAWLERS ──────────────────────
+User-agent: *
+Allow: /
+
+# Block access to internal/private paths
+Disallow: /admin/
+Disallow: /private/
+Disallow: /api/
+Disallow: /.env
+Disallow: /config/
+Disallow: /node_modules/
+
+# ── GOOGLE ───────────────────────────────────────
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 5
+
+# ── BING ─────────────────────────────────────────
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 10
+
+# ── BLOCK BAD BOTS ───────────────────────────────
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
+
+User-agent: BLEXBot
+Disallow: /
+
+# ── SITEMAP ──────────────────────────────────────
+# (replace with your actual domain)
+Sitemap: https://www.allinonetrophy.com/sitemap.xml
